@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Counter from './Component/Counter.js';
+import PlacarContainer from './Component/PlacarContainer';
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <PlacarContainer />
     </div>
   );
 }
