@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import Counter from './Counter';
 
 class HomeTeam extends Component {
   render() { 
     return (
       <div>
         <h1>Gremio</h1>
-        {/* <h1>{<Counter />}</h1> */}
+        {<Counter />}
       </div>
     );
   }

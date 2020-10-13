@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import HomeTeam from './HomeTeam';
 import VisitorTeam from './VisitorTeam';
 import MatchInfo from './MatchInfo';
+import './Styles/PlacarContainer.css';
 
 class PlacarContainer extends Component {
   state = {  }
