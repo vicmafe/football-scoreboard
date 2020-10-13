@@ -17,17 +17,21 @@ class counter extends Component {
   }
 
   handleClickLess() {
-    this.setState({
-      score: this.state.score - 1
-    });
+    if (this.state.score >= 1) {
+      this.setState({
+        score: this.state.score - 1
+      });
+    }
   }
 
   render() {
+    const { score } = this.state;
+    const { handleClickPlus, handleClickLess } = this;
     return (
       <div>
-        <div>{this.state.score}</div>
-        <button onClick={this.handleClickPlus}>+</button>
-        <button onClick={this.handleClickLess}>-</button>
+        <div>{score}</div>
+        <button onClick={handleClickPlus}>+</button>
+        <button onClick={handleClickLess}>-</button>
       </div>
     );
   }
