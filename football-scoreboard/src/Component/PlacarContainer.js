@@ -5,22 +5,23 @@ import MatchInfo from './MatchInfo';
 import './Styles/PlacarContainer.css';
 
 class PlacarContainer extends Component {
-  state = {  }
   render() { 
     return (
-      <div>
-        <div>
-          <HomeTeam />
-        </div>
-        <div>
-          <h3>VS</h3>
-        </div>
-        <div>
-          <VisitorTeam />
-        </div>
-        <div>
+      <div className="Placar">
+        <div className="Match">
           <MatchInfo />
         </div>
+        <div className="Confrontation">
+          <div className="TeamA">
+            <HomeTeam />
+          </div>
+          <div>
+            <h3>VS</h3>
+          </div>
+          <div className="TeamB">
+            <VisitorTeam />
+          </div>
+        </div>  
       </div>
     );
   }

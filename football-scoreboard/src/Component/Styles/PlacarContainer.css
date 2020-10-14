@@ -1,5 +1,26 @@
 body {
-  width: 900px;
-  height: 650px;
+  align-items: center;
+  margin-left: 200px;
+}
+
+.Placar {
+  width: 950px;
+  height: 550px;
   border: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Match {
+  margin-top: 50px;
+  padding: 5px;
+}
+
+.Confrontation {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }

@@ -1,10 +1,9 @@
 import React from 'react';
-import './App.css';
 import PlacarContainer from './Component/PlacarContainer';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <PlacarContainer />
     </div>
   );

@@ -5,7 +5,9 @@ class HomeTeam extends Component {
     return (
       <div>
         <div>
-          <h3>Nome do estádio</h3>
+          <h2>CAMPEONATO BRASILEIRO</h2>
+          <h3>Rodada - Turno</h3>
+          <h4>Nome do estádio</h4>
           <h4>Cidade - Estado</h4>
           <h4>Data - Horário</h4>
         </div>
