@@ -8,7 +8,7 @@ class PlacarContainer extends Component {
   render() { 
     return (
       <div className="Placar">
-        <h1>CAMPEONATO BRASILEIRO</h1>
+        <h1 className="Championship">CAMPEONATO BRASILEIRO</h1>
         <div className="Match">
           <MatchInfo />
         </div>
@@ -17,7 +17,7 @@ class PlacarContainer extends Component {
             <HomeTeam />
           </div>
           <div>
-            <h3>VS</h3>
+            <h3 className="Versus">VS</h3>
           </div>
           <div className="TeamB">
             <VisitorTeam />

@@ -1,11 +1,14 @@
 body {
   background-color: rgb(238, 238, 238);
+  margin-left: 700px;
+  color: aliceblue;
 }
 
 .Placar {
+  background-color: rgb(0, 0, 0);
+  margin-top: 100px;
   width: 950px;
-  height: 550px;
-  border: solid;
+  height: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +16,7 @@ body {
 }
 
 .Match {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   padding: 5px;
 }
 
@@ -24,4 +27,8 @@ body {
   align-items: center;
   justify-content: space-around;
   flex: 1;
+}
+
+.Championship {
+  margin-top: 50px;
 }

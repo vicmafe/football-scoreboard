@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Counter from './Counter';
+import CounterGoal from './CounterGoal';
 
 class VisitorTeam extends Component {
   render() { 
     return (
       <div>
-        <h1>Flamerda</h1>
-        {<Counter />}
+        <h1>Visitor Team</h1>
+        {<CounterGoal />}
       </div>
     );
   }
