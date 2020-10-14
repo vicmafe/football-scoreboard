@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 import './Styles/MatchInfo.css'
 
-class HomeTeam extends Component {
-  render() { 
+class MatchInfo extends Component {
+  render() {
+    const { round: { turno, rodada }, estadio, cidade, data, horario } = this.props;
     return (
       <div className="MatchDados">
-        <h3>Rodada - Turno</h3>
-        <h4>Nome do estádio</h4>
-        <h4>Cidade - Estado</h4>
-        <h4>Data - Horário</h4>
+        <h3>{`Rodada: ${rodada}`}</h3>
+        <h3>{`Turno: ${turno}`}</h3>
+        <h4>{estadio}</h4>
+        <h4>{cidade}</h4>
+        <h4>{data}</h4>
+        <h4>{horario}</h4>
       </div>
     );
   }
 }
  
-export default HomeTeam;
+export default MatchInfo;

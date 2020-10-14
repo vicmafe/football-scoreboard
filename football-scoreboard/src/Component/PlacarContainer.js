@@ -1,26 +1,28 @@
 import React, { Component } from 'react';
-import HomeTeam from './HomeTeam';
-import VisitorTeam from './VisitorTeam';
 import MatchInfo from './MatchInfo';
 import './Styles/PlacarContainer.css';
+import Team from './Team';
 
 class PlacarContainer extends Component {
-  render() { 
+  render() {
+    const { partida: { estadio, cidade, data, horario }, round, homeTeam ,visitorTeam } = this.props;
     return (
       <div className="Placar">
         <h1 className="Championship">CAMPEONATO BRASILEIRO</h1>
         <div className="Match">
-          <MatchInfo />
+          <MatchInfo
+            estadio={estadio} cidade={cidade}
+            data={data} horario={horario} round={round}/>
         </div>
         <div className="Confrontation">
           <div className="TeamA">
-            <HomeTeam />
+            <Team nome={homeTeam.nome} />
           </div>
           <div>
             <h3 className="Versus">VS</h3>
           </div>
           <div className="TeamB">
-            <VisitorTeam />
+            <Team nome={visitorTeam.nome}/>
           </div>
         </div>  
       </div>

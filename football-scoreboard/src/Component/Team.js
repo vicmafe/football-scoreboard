@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import CounterGoal from './CounterGoal';
 
-class HomeTeam extends Component {
+class Team extends Component {
   render() { 
     return (
       <div>
-        <h1>Home Team</h1>
+        <h1>{this.props.nome}</h1>
         {<CounterGoal />}
       </div>
     );
   }
 }
  
-export default HomeTeam;
+export default Team;
